@@ -1,0 +1,189 @@
+.ui.inverted.menu .search.dropdown.item > .search,
+  .ui.inverted.menu .search.dropdown.item > .text {
+    color: rgba(255, 255, 255, 0.9);
+  }
+/* 
+  .body2 {
+      background-color: black;
+      height: 200px;
+  } */
+
+  .ui.secondary.inverted.menu .link.item,
+  .ui.secondary.inverted.menu a.item {
+    color: rgba(255, 255, 255, 0.7) !important;
+    /* border: #eceaea 1px solid;
+    margin: 10px;
+    margin-top: 20px;
+    margin-left: 20px; */
+  }
+  .ui.secondary.inverted.menu .dropdown.item:hover,
+  .ui.secondary.inverted.menu .link.item:hover,
+  .ui.secondary.inverted.menu a.item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff !important;
+  }
+  .ui.secondary.inverted.menu .active.item {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff !important;
+  }
+
+/* Coupling with segment for attachment */
+.ui.tabular.menu + .attached:not(.top).segment,
+.ui.tabular.menu + .attached:not(.top).segment + .attached:not(.top).segment {
+  border-top: none;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  width: 100%;
+}
+.top.attached.segment + .ui.bottom.tabular.menu {
+  position: relative;
+  width: calc(100% + (1px * 2));
+  left: -1px;
+}
+
+
+/*--------------
+      Menu
+---------------*/
+
+.ui.menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 1rem 0em;
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background: rgb(17, 17, 17);
+    font-weight: normal;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    -webkit-box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+            box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+    border-radius: 0.28571429rem;
+    min-height: 2.85714286em;
+  }
+  .ui.menu:after {
+    content: '';
+    display: block;
+    height: 0px;
+    clear: both;
+    visibility: hidden;
+  }
+  .ui.menu:first-child {
+    margin-top: 0rem;
+  }
+  .ui.menu:last-child {
+    margin-bottom: 0rem;
+  }
+  
+/*--------------
+      Item
+---------------*/
+
+.ui.menu:not(.vertical) .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ui.menu .item {
+    position: relative;
+    vertical-align: middle;
+    line-height: 1;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: none;
+    padding: 0.92857143em 1.14285714em;
+    text-transform: none;
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: normal;
+    -webkit-transition: background 0.1s ease, color 0.1s ease, -webkit-box-shadow 0.1s ease;
+    transition: background 0.1s ease, color 0.1s ease, -webkit-box-shadow 0.1s ease;
+    transition: background 0.1s ease, box-shadow 0.1s ease, color 0.1s ease;
+    transition: background 0.1s ease, box-shadow 0.1s ease, color 0.1s ease, -webkit-box-shadow 0.1s ease;
+  }
+  .ui.menu > .item:first-child {
+    border-radius: 0.28571429rem 0px 0px 0.28571429rem;
+  }
+  
+  /* Border */
+  .ui.menu .item:before {
+    position: absolute;
+    content: '';
+    top: 0%;
+    right: 0px;
+    height: 100%;
+    width: 1px;
+    background: rgba(34, 36, 38, 0.1);
+  }
+  
+  /*--------------
+    Text Content
+  ---------------*/
+  
+  .ui.menu .text.item > *,
+  .ui.menu .item > a:not(.ui),
+  .ui.menu .item > p:only-child {
+    -webkit-user-select: text;
+       -moz-user-select: text;
+        -ms-user-select: text;
+            user-select: text;
+    line-height: 1.3;
+  }
+  .ui.menu .item > p:first-child {
+    margin-top: 0;
+  }
+  .ui.menu .item > p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /*--------------
+        Icons
+  ---------------*/
+  
+  .ui.menu .item > i.icon {
+    opacity: 0.9;
+    float: none;
+    margin: 0em 0.35714286em 0em 0em;
+  }
+  
+  /*--------------
+       Button
+  ---------------*/
+  
+  .ui.menu:not(.vertical) .item > .button {
+    position: relative;
+    top: 0em;
+    margin: -0.5em 0em;
+    padding-bottom: 0.78571429em;
+    padding-top: 0.78571429em;
+    font-size: 1em;
+  }
+  
+  /*----------------
+   Grid / Container
+  -----------------*/
+  
+  .ui.menu > .grid,
+  .ui.menu > .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: inherit;
+        -ms-flex-align: inherit;
+            align-items: inherit;
+    -webkit-box-orient: inherit;
+    -webkit-box-direction: inherit;
+        -ms-flex-direction: inherit;
+            flex-direction: inherit;
+  }
+  
+
