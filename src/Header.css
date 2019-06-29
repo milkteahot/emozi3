@@ -2,3 +2,19 @@
     /* border: 1px solid #999999; */
     text-align: center;
 }
+
+.logo {
+    width: 30px;
+    padding-top: 0px;
+}
+
+.ui.center.aligned.icon.header {
+    font-size: 2em;
+    font-weight: 150;
+    margin: 15px 15px;
+    padding-bottom: 5px;
+}
+
+.logo {
+    margin: 5px 15px 0px 15px;
+}

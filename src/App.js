@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 import Card from './Card';
 import Menu from './Menu';
 import Header from './Header';
 import WinnerList from './WinnerList';
+import Counter from './components/Counter'
 
 class App extends Component {
   render() {

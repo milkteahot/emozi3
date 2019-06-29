@@ -1,9 +1,49 @@
 import React, {Component} from 'react';
 import './Card.css';
+import empty from './image/emptyheart.png';
+import heart from './image/heart.png';
+
+const imagesPath = {
+    empty: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Heart_icon_red_hollow.svg/254px-Heart_icon_red_hollow.svg.png",
+    heart: "https://www.sccpre.cat/mypng/full/2-20969_solid-black-heart-cliparts-transparent-background-heart-png.png"
+}
 
 class Card extends Component {
+    state = {
+        open: true
+    }
+    toggleImage = () => {
+        this.setState(state => ({open:!state.open}))
+    }
+    getImageName = () => this.state.open ? 'empty' : 'heart'
+    
+    state = {
+        open2: true
+    }
+    toggleImage2 = () => {
+        this.setState(state => ({open2:!state.open2}))
+    }
+    getImageName2 = () => this.state.open2 ? 'empty' : 'heart'
+
+    state = {
+        open3: true
+    }
+    toggleImage3 = () => {
+        this.setState(state => ({open3:!state.open3}))
+    }
+    getImageName3 = () => this.state.open3 ? 'empty' : 'heart'
+
+
+ 
+
     render() {
+        const imageName = this.getImageName();
+        const imageName2 = this.getImageName2();
+        const imageName3 = this.getImageName3();
+
         return(
+           
+           
 
             <div class="body1">
                 <div class="ui link cards">
@@ -23,14 +63,17 @@ class Card extends Component {
                         </div>
                         <div class="extra content">
                         <span class="right floated">
-      <img class="heart outline like icon" src="http://icons.iconarchive.com/icons/designbolts/free-valentine-heart/256/Heart-icon.png"/>
-      17 likes
+                      
+                       
+      <img className="heart outline like icon2" src={imagesPath[imageName]} onClick={this.toggleImage}  />
+   
+      50 likes
     </span>
                         <span>
                             <i class="user icon"></i>
                             75 Friends
                         </span>
-                        </div>
+                        </div> 
                        
                 
                        
@@ -51,8 +94,8 @@ class Card extends Component {
                         </div>
                         <div class="extra content">
                         <span class="right floated">
-      <img class="heart outline like icon" src="http://icons.iconarchive.com/icons/designbolts/free-valentine-heart/256/Heart-icon.png"/>
-      32 likes </span>
+                        <img className="heart outline like icon2" src={imagesPath[imageName2]} onClick={this.toggleImage2}  />
+      44 likes </span>
                         <span>
                             <i class="user icon"></i>
                             75 Friends
@@ -74,8 +117,9 @@ class Card extends Component {
                         </div>
                         <div class="extra content">
                         <span class="right floated">
-      <img class="heart outline like icon" src="http://icons.iconarchive.com/icons/designbolts/free-valentine-heart/256/Heart-icon.png"/>
-      25 likes </span>
+                            
+                        <img className="heart outline like icon2" src={imagesPath[imageName3]} onClick={this.toggleImage3}  />
+      11 likes </span>
                         <span>
                             <i class="user icon"></i>
                             75 Friends

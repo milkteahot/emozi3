@@ -1,16 +1,18 @@
 .ui.inverted.menu .search.dropdown.item > .search,
   .ui.inverted.menu .search.dropdown.item > .text {
     color: rgba(255, 255, 255, 0.9);
+    font: bolder;
   }
-/* 
-  .body2 {
-      background-color: black;
+
+  /* .body2 {
+      background-color: #fff000;
       height: 200px;
   } */
 
   .ui.secondary.inverted.menu .link.item,
   .ui.secondary.inverted.menu a.item {
     color: rgba(255, 255, 255, 0.7) !important;
+    font: bolder;
     /* border: #eceaea 1px solid;
     margin: 10px;
     margin-top: 20px;
@@ -21,6 +23,7 @@
   .ui.secondary.inverted.menu a.item:hover {
     background: rgba(255, 255, 255, 0.08);
     color: #ffffff !important;
+    font: bolder;
   }
   .ui.secondary.inverted.menu .active.item {
     background: rgba(255, 255, 255, 0.15);
@@ -53,7 +56,7 @@
     display: flex;
     margin: 1rem 0em;
     font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-    background: rgb(17, 17, 17);
+    background: rgb(47, 2, 250);
     font-weight: normal;
     border: 1px solid rgba(34, 36, 38, 0.15);
     -webkit-box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);

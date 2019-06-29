@@ -1,7 +1,18 @@
+.winner-heart {
+  height: 15px;
+  margin-top: 4px;
+  margin-right: 2px;
+}
+/* 
+.content {
+  display: flex;
+} */
 .ui.ordered.horizontal.list {
     /* border: 1px solid #999; */
-    padding-left: 30%;
+    /* padding-left: 30%; */
     align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .item {
@@ -150,6 +161,8 @@ ol.ui.horizontal.list li:before,
   .ui.horizontal.list > .item > .content,
   .ui.horizontal.list .list > .item > .content {
     vertical-align: middle;
+    display: inline-table;
+    padding-inline-start: 3px;
   }
   
   /* Padding on all elements */

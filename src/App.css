@@ -1,5 +1,16 @@
 .App {
   text-align: center;
+  font-family: Apple산돌고딕Neo;
+}
+
+#root {
+  font-family: Apple산돌고딕Neo;
+}
+
+@font-face {
+  font-family: 'Apple산돌고딕Neo';
+  src: url('C:\Users\LG\emozi3\src\Apple 산돌고딕 Neo\AppleSDGothicNeoM.ttf');
+  src: url('C:\Users\LG\emozi3\src\Apple 산돌고딕 Neo\AppleSDGothicNeoEB.ttf');
 }
 
 .App-logo {
@@ -35,4 +46,5 @@
 .body1 {
   /* border: 1px solid black; */
   margin: 20px;
+  /* background-color: #fff000; */
 }

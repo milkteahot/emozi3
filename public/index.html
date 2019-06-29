@@ -20,9 +20,25 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <script type="text/JavaScript">
+      var state=0;
+      function ChangeImage() {
+        if (state==0) {
+          document.img2.src="../src/image/emptyheart.png"
+          state=1;
+        }
+        else {
+          document.img3.src="../src/image/heart.png"
+          state=0;
+        }
+        
+      }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.min.js"></script>
     <div id="root"></div>
     <!--
       This HTML file is a template.
